@@ -10,8 +10,9 @@ function App() {
 
     const [cartItems, setCartItems] = useState([])
     function addCartItem (item) {
-        console.log("item", item)
-        setCartItems ([...cartItems,item])
+        const intermediatCartItems = [...cartItems]
+        intermediatCartItems.push(item)
+        setCartItems (intermediatCartItems)
     }
 
   return (

@@ -30,6 +30,7 @@ return(
                    description={product.description}
                    price={product.price}
                    addCartItems={props.addCartItems}
+                   isCardsList={true}
                />
             )
         })}</div>
